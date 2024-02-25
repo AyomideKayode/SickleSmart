@@ -15,3 +15,4 @@ Fixed the Key Features section
 25-02-2024
 
 Modified testimonials section
+Rewrote the newsletter section.
