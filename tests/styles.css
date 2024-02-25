@@ -532,6 +532,7 @@ html {
   width: auto;
   transition: 0.3s;
   height: auto;
+  margin-left: var(--dl-size-size-small);
   border: 2px solid #179013;
   border-radius: var(--dl-radius-radius-radius10);
 }
@@ -1366,70 +1367,79 @@ html {
 .home-features1 {
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-twounits);
-  max-width: var(--dl-size-size-maxwidth);
+  padding: var(--dl-space-space-unit);
+  max-width: var(--dl-size-size-midmaxwidth);
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 .home-hero3 {
   width: 100%;
+  height: auto;
   display: flex;
   padding: var(--dl-space-space-twounits);
-  min-height: 80vh;
-  align-items: flex-start;
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 60vh;
+  align-items: center;
   flex-direction: row;
-  justify-content: flex-start;
+  gap: 30px;
+  justify-content: center;
 }
+
 .home-container57 {
-  width: 564px;
-  height: 433px;
+  width: 100%;
+  height: auto;
   display: flex;
-  padding: var(--dl-space-space-twounits);
-  margin-top: var(--dl-space-space-threeunits);
+  padding: var(--dl-space-space-unit);
+  margin: var(--dl-space-space-oneandhalfunits);
   align-items: flex-start;
-  margin-right: var(--dl-space-space-fourunits);
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .home-text090 {
   font-size: 18px;
-  margin-top: var(--dl-space-space-twounits);
+  margin: var(--dl-space-space-unit) 0px;
   font-family: 'Merriweather';
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
+
 .home-text091 {
   font-size: 3em;
   font-family: 'Merriweather';
-  margin-bottom: var(--dl-space-space-unit);
+  margin: var(--dl-space-space-halfunit) 0px;
 }
+
 .home-text092 {
   font-size: 18px;
   font-family: 'Merriweather';
-  margin-bottom: var(--dl-space-space-threeunits);
+  margin-bottom: var(--dl-space-space-twounits);
 }
 .home-icon22 {
-  width: 24px;
-  height: 24px;
+  width: 2rem;
+  height: 2rem;
 }
 .home-text093 {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-family: 'Merriweather';
 }
 .home-text094 {
-  margin-top: var(--dl-space-space-unit);
+  font-size: 18px;
+  margin: var(--dl-space-space-halfunit) 0px;
   font-family: 'Merriweather';
 }
+
 .home-image4 {
-  width: 538px;
-  height: 660px;
+  width: auto;
+  height: auto;
   padding: 0px;
-  margin-top: var(--dl-space-space-threeunits);
+  margin: var(--dl-space-space-halfunit);
   object-fit: cover;
   border-radius: 50px;
 }
+
 .home-footer {
   width: 100%;
   display: flex;
@@ -1580,9 +1590,6 @@ html {
   .home-text082 {
     width: 100%;
   }
-  .home-hero3 {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1590,17 +1597,21 @@ html {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+
   .home-nav {
     display: none;
   }
+
   .home-btn-group {
     display: none;
   }
+
   .home-burger-menu {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .home-hero {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -1611,6 +1622,7 @@ html {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+
   .home-steps {
     max-width: var(--dl-size-size-tabmaxwidth);
     padding-left: var(--dl-space-space-oneandhalfunits);
@@ -1743,10 +1755,12 @@ html {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
+
   .home-banner1 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+
   .home-text082 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
@@ -1773,7 +1787,9 @@ html {
   .home-hero3 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
+    flex-direction: column;
   }
+
   .home-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
