@@ -20,3 +20,4 @@ Fixed the Key Features section
 26-02-2024
 
 - Footer section was done and full page is responsive for mobile and tablets.
+- Wrote JS for toggle desktop and mobile menu
