@@ -21,3 +21,4 @@ Fixed the Key Features section
 
 - Footer section was done and full page is responsive for mobile and tablets.
 - Wrote JS for toggle desktop and mobile menu
+- Changed necessary images for a more visually appealing sight.
