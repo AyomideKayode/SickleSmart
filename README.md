@@ -14,5 +14,9 @@ Fixed the Key Features section
 
 25-02-2024
 
-Modified testimonials section
-Rewrote the newsletter section.
+- Modified testimonials section
+- Rewrote the newsletter section.
+
+26-02-2024
+
+- Footer section was done and full page is responsive for mobile and tablets.
