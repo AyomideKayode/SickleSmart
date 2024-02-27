@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 document.addEventListener('DOMContentLoaded', function () {
   const burgerMenu = document.querySelector('.home-burger-menu');
   const mobileMenu = document.querySelector('.home-mobile-menu');
