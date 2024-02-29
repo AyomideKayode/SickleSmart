@@ -694,7 +694,7 @@ html {
   transform: scale(1.12);
 }
 
-.home-container14 {
+/* .home-container14 {
   width: 278px;
   height: 132px;
   display: flex;
@@ -730,7 +730,7 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-}
+} */
 
 .home-image2 {
   width: auto;
@@ -1213,12 +1213,12 @@ html {
   justify-content: space-around;
 }
 
-.home-text076 {
+/* .home-text076 {
   max-width: var(--dl-size-size-maxwidth);
   margin-top: var(--dl-space-space-twounits);
   text-align: center;
   margin-bottom: var(--dl-space-space-twounits);
-}
+} */
 .home-container55 {
   flex: 0 0 auto;
   width: auto;
@@ -1229,7 +1229,6 @@ html {
   justify-content: center;
 }
 
-/* 2nd Home Banner testing */
 
 .newsletter-section {
   width: 100%;
