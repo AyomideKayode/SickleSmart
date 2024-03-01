@@ -10,7 +10,7 @@ from sqlalchemy.sql import func
 
 class HealthStatus(db.Model):
     healthStatusID = db.Column(db.Integer, primary_key=True)
-    updated_date = db.Column(db.Datetime(timezone=True), default=func.now())
+    updated_date = db.Column(db.DateTime(timezone=True), default=func.now())
     symptoms = db.Column(db.String(5000))
     medication = db.Column(db.String(2500))
     hydration_level = db.Column(db.Integer)
