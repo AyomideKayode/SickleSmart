@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Add click event listener to login button
   loginButton.addEventListener('click', function () {
     // Redirect to the login page
-    window.location.href = 'login.html';
+    window.location.href = 'login';
   });
 
   // Add click event listener to register button
   registerButton.addEventListener('click', function () {
     // Redirect to the register page
-    window.location.href = 'register.html';
+    window.location.href = 'register';
   });
 });
