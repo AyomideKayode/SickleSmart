@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SickleSmart - Aiding lives, one cell at a time.</title>
-    <link rel="stylesheet" href="../static/styles/homepage.css">
+    <link rel="stylesheet" href="../static/styles/homepage.css" />
   </head>
   <body>
     <div class="home-container">
@@ -557,7 +557,7 @@
       </footer>
       <!-- End of Footer Section🚧 -->
     </div>
-    <script src="../static/scripts/main.js"></script>
-    <script src="../static/scripts/login_register.js"></script>
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/login_register.js') }}"></script>
   </body>
 </html>

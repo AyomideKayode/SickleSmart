@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template
+"""Entry point module for the website where the execution will take place.
+"""
 
-app = Flask(__name__)
+from sicklesmart_web import create_app
 
-
-@app.route('/')
-def home():
-    return render_template('index.html')
-
+app = create_app()
 
 if __name__ == '__main__':
     app.run(debug=True)

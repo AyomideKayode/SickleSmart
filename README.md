@@ -22,3 +22,14 @@ Fixed the Key Features section
 - Footer section was done and full page is responsive for mobile and tablets.
 - Wrote JS for toggle desktop and mobile menu
 - Changed necessary images for a more visually appealing sight.
+
+
+29-04-2024
+
+Working on the backend with Flask, a lot of restructuring is being done and also some necessary installations to help with user authentication, databases and alladat.
+
+`pip install flask`
+
+`pip install flask-login`
+
+`pip install flask-sqlalchemy`
