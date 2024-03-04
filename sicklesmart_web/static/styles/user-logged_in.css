@@ -1,0 +1,157 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* height: 100vh; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  color: #439646;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section {
+  background-color: #fff;
+  width: 100%;
+  max-width: var(--dl-size-size-midmaxwidth);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.welcome_greeting {
+  margin-bottom: var(--dl-space-space-threeunits);
+}
+
+.user_welcome {
+  font-size: 2rem;
+  text-align: left;
+  margin: var(--dl-space-space-unit) 0px;
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+
+.more_info {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  min-height: 70vh;
+  max-width: var(--dl-size-size-midmaxwidth);
+  margin: var(--dl-space-space-unit) var(--dl-space-space-oneandhalfunits);
+}
+
+.more_info-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: var(--dl-space-space-fourunits);
+}
+
+.more_info_text-title {
+  font-family: 'Hammersmith One';
+  font-size: 2rem;
+  margin-bottom: var(--dl-space-space-unit);
+  padding: var(--dl-space-space-halfunit);
+}
+
+.more_info-texts p {
+  padding: var(--dl-space-space-halfunit);
+}
+
+.sc_process {
+  width: 100%;
+  margin: var(--dl-space-space-unit) 10px;
+  padding: var(--dl-space-space-halfunit);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.more_info-image {
+  width: 454px;
+  height: 578px;
+  object-fit: cover;
+  margin: var(--dl-space-space-unit);
+  border-radius: 25px;
+}
+
+.more_info2 {
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: var(--dl-size-size-midmaxwidth);
+  margin: var(--dl-space-space-unit) var(--dl-space-space-oneandhalfunits);
+}
+
+.useful_resources {
+  margin-top: var(--dl-space-space-twounits);
+}
+
+.useful_resources h2 {
+  font-family: 'Hammersmith One';
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: underline;
+}
+
+.useful_resources p {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+
+.useful_resources li {
+  margin: var(--dl-space-space-halfunit) 0px;
+}
+
+.useful_resources a:hover {
+  text-decoration: underline;
+  font-style: italic;
+  margin-left: var(--dl-space-space-halfunit);
+}
+
+button {
+  background-color: #4caf50;
+  /* color: white; */
+  padding: 10px;
+  /* border: none; */
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* MEDIA QUERY🚧 */
+
+@media screen and (max-width: 768px) {
+  .more_info {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: var(--dl-size-size-mobilemaxwidth);
+  }
+
+  .more_info-texts {
+    align-items: center;
+  }
+}

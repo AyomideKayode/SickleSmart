@@ -63,6 +63,7 @@ html {
 }
 
 body {
+  background-color: #f2f2f2;
   margin: 0;
   font-family: 'Lora';
 }
@@ -89,6 +90,12 @@ blockquote,
 figcaption {
   margin: 0;
   padding: 0;
+}
+
+p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 button {
