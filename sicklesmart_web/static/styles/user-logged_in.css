@@ -112,6 +112,20 @@ section {
   border-radius: 25px;
 }
 
+.health-tracker {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.health-tracker form textarea {
+  margin: var(--dl-space-space-oneandhalfunits) 10px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  border: 2px solid #555;
+  width: 100%;
+}
+
 .more_info2 {
   width: auto;
   display: grid;

@@ -133,7 +133,7 @@
     <section>
       <div class="welcome_greeting">
         <h1 class="user_welcome">
-          Welcome to SickleSmart🩺🧘🏽‍♀️, {{ user_name }}!
+          Welcome to SickleSmart🩺🧘🏽‍♀️, {{ user.user_name }}!
         </h1>
         <p>
           Sickle cell disease is a hereditary blood disorder characterized by
@@ -203,6 +203,29 @@
           sickle cell and aims to empower them with knowledge, resources, and a
           sense of community.
         </p>
+      </div>
+      <div class="health-tracker">
+        <h2>
+          To track and monitor your health, you can add descriptions of what you
+          feel below.
+        </h2>
+        <ul id="healthStatuses">
+          {% for healthStatus in user.healthStatus %}
+          <li>{{ healthStatus.symptoms }}</li>
+          {% endfor %}
+        </ul>
+        <form method="POST">
+          <textarea
+            name="healthStatus"
+            id="healthStatus"
+            placeholder="Symptoms, Medications, Hydration Level"
+          >
+          </textarea>
+          <br />
+          <div>
+            <button type="submit">Track My Health</button>
+          </div>
+        </form>
       </div>
       <div id="resources" class="useful_resources">
         <h2 class="useful_resources-title">Useful Resources</h2>
