@@ -12,7 +12,7 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', user=current_user)
 
 
 @views.route('/user-logged_in')
@@ -20,4 +20,4 @@ def home():
 # to be added to the page route that should be dsiplayed when
 # users have successfully registered or logged in.
 def user_logged_in():
-    return render_template('user-logged_in.html')
+    return render_template('user-logged_in.html', user=current_user)

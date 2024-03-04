@@ -30,7 +30,7 @@ def login():
             flash('Email does not exist - I no sabi you before',
                   category='error')
 
-    return render_template("login.html")
+    return render_template("login.html", user=current_user)
 
 
 @auth.route('/logout')
@@ -76,4 +76,4 @@ def register():
             flash('Sign Up for SickleSmart successful!', category='success')
             return redirect(url_for('views.user_logged_in'))
 
-    return render_template("register.html")
+    return render_template("register.html", user=current_user)
