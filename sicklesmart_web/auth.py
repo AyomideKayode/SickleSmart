@@ -7,6 +7,7 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 from .models import User
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
+from flask_login import login_user, login_required, logout_user, current_user
 
 auth = Blueprint('auth', __name__)
 
@@ -21,18 +22,22 @@ def login():
         if user:
             if check_password_hash(user.password, password):
                 flash('Logged in succesfully!', category='success')
-                return redirect(url_for('views.home'))
+                login_user(user, remember=True)
+                return redirect(url_for('views.user_logged_in'))
             else:
                 flash('You dey wyn me? E no correct jhur', category='error')
         else:
-            flash('Email does not exist - I no sabi you before', category='error')
+            flash('Email does not exist - I no sabi you before',
+                  category='error')
 
     return render_template("login.html")
 
 
 @auth.route('/logout')
+@login_required
 def logout():
-    return "<p>Log out</p>"
+    logout_user()
+    return redirect(url_for('auth.login'))
 
 
 @auth.route('/register', methods=['GET', 'POST'])
@@ -48,7 +53,8 @@ def register():
 
         user = User.query.filter_by(email=email).first()
         if user:
-            flash('Person don use this email before, change am', category='error')
+            flash('Person don use this email before, change am',
+                  category='error')
         elif len(email) < 4:
             flash('Email must be greater than 3 characters and be valid',
                   category='error')
@@ -66,7 +72,8 @@ def register():
                                                             method='pbkdf2:sha256'))
             db.session.add(new_user)
             db.session.commit()
+            login_user(user, remember=True)
             flash('Sign Up for SickleSmart successful!', category='success')
-            return redirect(url_for('views.home'))
+            return redirect(url_for('views.user_logged_in'))
 
     return render_template("register.html")
