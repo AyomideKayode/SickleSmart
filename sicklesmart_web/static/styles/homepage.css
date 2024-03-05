@@ -9,6 +9,7 @@
   --dl-color-pigment-green: #28b557;
   --dl-color-pigment-green2: #11a739;
   --dl-color-light_skyblue: #83c7ed;
+  --dl-color-logo-title: #31afb4;
   --dl-color-mint: #3ab77b;
   --dl-color-davy-gray: #5b5b5b;
   --dl-color-danger-700: #e14747;
@@ -210,7 +211,7 @@ html {
 
 .home-nav .navigation-links2-nav li a,
 .home-nav-mobile .navigation-links2-nav li a {
-  color: var(--dl-color-custom-primary1);
+  color: var(--dl-color-davy-gray);
   text-decoration: none;
 }
 
@@ -218,7 +219,7 @@ html {
 .home-nav-mobile .navigation-links2-nav li a:hover {
   font-style: italic;
   font-weight: 700;
-  color: var(--dl-color-mint);
+  color: var(--dl-color-logo-title);
   text-decoration: underline;
 }
 
