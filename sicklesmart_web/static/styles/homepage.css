@@ -185,7 +185,7 @@ html {
 }
 
 .home-image {
-  height: 2rem;
+  height: 3.5rem;
 }
 
 .home-nav {
@@ -1254,8 +1254,8 @@ html {
 }
 
 .home-image5 {
-  height: 2rem;
-  margin-bottom: var(--dl-space-space-twounits);
+  height: 3.5rem;
+  margin-bottom: var(--dl-space-space-unit);
 }
 
 .home-nav2 {
@@ -1659,6 +1659,7 @@ html {
     padding-right: var(--dl-space-space-twounits);
   }
   .home-image5 {
+    height: 2.5rem;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 
