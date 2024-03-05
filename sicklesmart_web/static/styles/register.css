@@ -16,7 +16,7 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
@@ -56,19 +56,40 @@ body {
   cursor: pointer;
 }
 
+.form_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: var(--dl-size-size-midmaxwidth);
+  margin: var(--dl-space-space-halfunit) var(--dl-space-space-unit);
+}
+
+.form_section img {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 480px;
+  height: 578px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 form {
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* width: 100%;
-  max-width: 400px; */
+  box-shadow: 8px 8px 2px rgba(49, 175, 180, 0.1),
+    8px 8px 2px rgba(91, 91, 91, 0.1), 8px 8px 2px rgba(58, 183, 123, 0.1);
+  width: 100%;
   margin-top: 40px;
+  margin-bottom: var(--dl-space-space-twounits);
 }
 
-h1 {
-  text-align: center;
-  color: #333;
+form h1 {
+  font-family: 'Hammersmith One';
+  text-align: left;
+  color: var(--dl-color-logo-title);
+  margin-bottom: 1.5rem;
 }
 
 label {
@@ -118,4 +139,19 @@ button:hover {
   background-color: #45a049;
   transform: scale(0.95);
   font-style: italic;
+}
+
+/* MEDIA QUERY FOR SMALL SCREEN SIZES (TAB, etc) */
+@media screen and (max-width: 768px) {
+  .form_section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: var(--dl-size-size-mobilemaxwidth);
+    margin: var(--dl-space-space-halfunit) var(--dl-space-space-unit);
+  }
+
+  .form_section img {
+    margin-left: 0;
+    padding: var(--dl-space-space-unit);
+  }
 }

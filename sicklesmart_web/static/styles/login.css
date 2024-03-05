@@ -16,10 +16,10 @@ body {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .flash-messages {
