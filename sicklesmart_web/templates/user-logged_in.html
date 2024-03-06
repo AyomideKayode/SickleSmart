@@ -8,6 +8,7 @@
     <title>Welcome to SickleSmart</title>
     <link rel="stylesheet" href="../static/styles/homepage.css" />
     <link rel="stylesheet" href="../static/styles/user-logged_in.css" />
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
   </head>
   <body>
     <!-- Beginning of Header Section🚧 -->
@@ -213,7 +214,17 @@
         </h2>
         <ul id="healthStatuses">
           {% for healthStatus in user.healthStatus %}
-          <li>{{ healthStatus.symptoms }}</li>
+          <li id="entry-{{ healthStatus.id }}">
+            {{ healthStatus.symptoms }}
+            <button
+              type="button"
+              class="close"
+              data-health-status-id="{{ healthStatus.id }}"
+              onClick="deleteEntry('{{ healthStatus.id }}')"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </li>
           {% endfor %}
         </ul>
         <form method="POST">
@@ -221,8 +232,7 @@
             name="healthStatus"
             id="healthStatus"
             placeholder="Symptoms, Medications, Hydration Level"
-          >
-          </textarea>
+          ></textarea>
           <br />
           <div>
             <button type="submit">Track My Health</button>
@@ -297,12 +307,5 @@
       </div>
     </footer>
     <!-- End of Footer Section🚧 -->
-
-    <!-- <script>
-      function logout() {
-        window.location.href = '/logout';
-      }
-    </script> -->
-    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
   </body>
 </html>
