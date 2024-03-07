@@ -72,7 +72,7 @@ def register():
                                                             method='pbkdf2:sha256'))
             db.session.add(new_user)
             db.session.commit()
-            login_user(user, remember=True)
+            login_user(new_user, remember=True)
             flash('Sign Up for SickleSmart successful!', category='success')
             return redirect(url_for('views.user_logged_in'))
 
