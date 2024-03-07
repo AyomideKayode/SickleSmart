@@ -239,8 +239,21 @@ html {
 }
 
 .home-login {
-  border-width: 0px;
+  border: 1px solid var(--dl-color-apple-green);
+  transition: border-color 1.5s;
   margin-right: var(--dl-space-space-twounits);
+}
+
+.home-login:hover,
+.home-btn-group button:nth-child(2):hover {
+  border-color: var(--dl-color-light_skyblue);
+  border-width: 2px;
+  transform: scale(1.12);
+}
+
+.home-btn-group button:nth-child(2) {
+  border: 2px solid var(--dl-color-apple-green);
+  transition: border-color 1.5s;
 }
 
 /* Mobile view aspect of Header Section🚧 */
@@ -366,12 +379,14 @@ html {
 
 .home-button {
   transition: 0.3s;
-  color: #ffffff;
-  transition: 0.4s;
+  color: var(--dl-color-custom-neutral-dark);
+  font-weight: 500;
+  transition: background-color 1.5s;
   width: auto;
   height: auto;
+  border: solid var(--dl-color-apple-green);
   border-radius: var(--dl-radius-radius-radius10);
-  background-color: #179013;
+  background-color: var(--dl-color-honeydew);
 }
 
 .home-button:hover {
@@ -381,15 +396,16 @@ html {
 .home-button1 {
   transition: 0.3s;
   width: auto;
-  transition: 0.3s;
+  transition: background-color 1.5s;
   height: auto;
   margin-left: var(--dl-size-size-small);
-  border: 2px solid #179013;
+  border: 2px solid var(--dl-color-apple-green);
   border-radius: var(--dl-radius-radius-radius10);
 }
 
 .home-button1:hover {
   transform: scale(1.12);
+  background-color: var(--dl-color-apple-green);
 }
 
 /* 🚧END OF BANNER SECTION STYLES🚧 */
@@ -516,27 +532,29 @@ html {
 .home-button2,
 .home-button4,
 .home-button6 {
-  color: #ffffff;
-  transition: 0.4s;
+  color: var(--dl-color-honeydew);
+  transition: background-color 1.5s;
   width: auto;
   height: auto;
   border-radius: var(--dl-radius-radius-radius10);
-  background-color: #179013;
+  background-color: var(--dl-color-asparagus);
 }
 
 .home-button2:hover,
 .home-button4:hover,
 .home-button6:hover {
   transform: scale(1.12);
+  color: var(--dl-color-asparagus);
+  background-color: var(--dl-color-honeydew);
 }
 
 .home-button3,
 .home-button5,
 .home-button7 {
   width: auto;
-  transition: 0.3s;
+  transition: background-color 1.5s;
   height: auto;
-  border: 2px solid #179013;
+  border: 2px solid var(--dl-color-yellow-green1);
   border-radius: var(--dl-radius-radius-radius10);
 }
 
@@ -544,6 +562,7 @@ html {
 .home-button5:hover,
 .home-button7:hover {
   transform: scale(1.12);
+  background-color: var(--dl-color-apple-green);
 }
 
 .home-image2 {
@@ -1111,8 +1130,8 @@ html {
   width: 100%;
   text-align: center;
   max-width: var(--dl-size-size-midmaxwidth);
-  margin: 0 auto;
-  background-image: url('https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE3fHxhcmNoaXRlY3R1cmUlMjBtaW5pbWFsfGVufDB8fHx8MTYyNjE4NDA0Mg&ixlib=rb-1.2.1&w=1300');
+  margin: var(--dl-space-space-oneandhalfunits) auto;
+  /* background-image: url('../images/sicklesmart-img-dna.jpg'); */
   background-position: center;
   /* background-repeat: no-repeat; */
 }
@@ -1146,8 +1165,8 @@ html {
 
 .subscribe-button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--dl-color-logo-title);
+  color: var(--dl-color-honeydew);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1155,7 +1174,7 @@ html {
 }
 
 .subscribe-button:hover {
-  background-color: #0056b3;
+  background-color: var(--dl-color-yellow-green1);
   transform: scale(1.12);
 }
 
