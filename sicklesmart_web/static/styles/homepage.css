@@ -4,17 +4,20 @@
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;
   --dl-color-gray-900: #d9d9d9;
-  --dl-color-yellow-green1: #a2da35;
+  --dl-color-yellow-green1: #b0c345;
   --dl-color-yellow-green2: #8dd71e;
-  --dl-color-pigment-green: #28b557;
-  --dl-color-pigment-green2: #11a739;
-  --dl-color-light_skyblue: #83c7ed;
+  --dl-color-honeydew: #e1ecdd;
+  --dl-color-celadon: #afcba0;
+  --dl-color-olivine: #83af6e;
+  --dl-color-asparagus: #75a65c;
+  --dl-color-apple-green: #9db642;
+  --dl-color-light_skyblue: #bbe5ef;
   --dl-color-logo-title: #31afb4;
-  --dl-color-mint: #3ab77b;
+  --dl-color-mint-green: #c7e4da;
   --dl-color-davy-gray: #5b5b5b;
   --dl-color-danger-700: #e14747;
   --dl-color-gray-black: #000000;
-  --dl-color-gray-white: #ffffff;
+  --dl-color-gray-white: #f2f2f2;
   --dl-size-size-xsmall: 1rem;
   --dl-size-size-small: 3rem;
   --dl-size-size-medium: 6rem;
@@ -64,9 +67,14 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: var(--dl-color-gray-white);
   margin: 0;
+  padding: 0;
+  width: auto;
   font-family: 'Lora';
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -779,9 +787,10 @@ html {
   width: auto;
   padding: var(--dl-space-space-unit);
   font-size: 2.5rem;
+  /* font-weight: 700; */
   align-self: center;
   text-align: center;
-  color: var(--dl-color-light_skyblue);
+  color: var(--dl-color-olivine);
   margin: var(--dl-space-space-unit) var(--dl-space-space-threeunits);
 }
 
@@ -811,7 +820,7 @@ html {
 .home-icon16,
 .home-icon18,
 .home-icon20 {
-  fill: var(--dl-color-pigment-green);
+  fill: var(--dl-color-apple-green);
   width: var(--dl-size-size-small);
   height: var(--dl-size-size-small);
 }
@@ -905,12 +914,24 @@ html {
 
 .testimonial-card2-text {
   color: var(--dl-color-gray-500);
-  font-size: 1.15rem;
+  font-size: 0.85rem;
   margin-bottom: var(--dl-space-space-twounits);
 }
 
+.testimonial-card2-text p {
+  font-size: 1rem;
+  color: var(--dl-color-olivine);
+}
+
 .testimonial-card2-text1 {
-  font-size: 1.5rem;
+  color: var(--dl-color-olivine);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.testimonial-card2-text1 p {
+  color: var(--dl-color-davy-gray);
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -924,7 +945,7 @@ html {
 
 .testimonial-card2-root-class-name1 {
   align-self: flex-start;
-  background-color: var(--dl-color-light_skyblue);
+  background-color: var(--dl-color-gray-white);
   color: var(--dl-color-custom-primary1);
 }
 
@@ -938,8 +959,8 @@ html {
   padding: var(--dl-space-space-twounits);
   max-width: var(--dl-size-size-maxwidth);
   align-self: stretch;
-  background: var(--dl-color-mint);
-  color: var(--dl-color-gray-900);
+  background: var(--dl-color-asparagus);
+  color: var(--dl-color-mint-green);
   box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
   align-items: stretch;
   flex-direction: column;
@@ -947,6 +968,7 @@ html {
 }
 
 .testimonial-card4-icon {
+  fill: var(--dl-color-mint-green);
   width: var(--dl-size-size-medium);
   flex-shrink: 0;
   margin-bottom: var(--dl-space-space-halfunit);
@@ -954,7 +976,8 @@ html {
 
 .testimonial-card4-text {
   color: var(--dl-color-gray-900);
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-weight: 600;
   padding-top: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-threeunits);
 }
@@ -975,9 +998,9 @@ html {
 }
 
 .testimonial-card4-image {
-  width: var(--dl-size-size-medium);
-  filter: grayscale();
-  height: var(--dl-size-size-medium);
+  width: var(--dl-size-size-large);
+  filter: brightness();
+  height: var(--dl-size-size-large);
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
@@ -991,15 +1014,15 @@ html {
 }
 
 .testimonial-card4-text1 {
-  font-size: var(--dl-space-space-twounits);
-  font-style: normal;
+  color: var(--dl-color-mint-green);
+  font-size: var(--dl-space-space-oneandhalfunits);
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
 .testimonial-card4-text2 {
   color: var(--dl-color-gray-black);
-  font-size: 12px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
 }
