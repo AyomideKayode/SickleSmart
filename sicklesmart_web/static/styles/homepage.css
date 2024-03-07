@@ -351,6 +351,7 @@ html {
 }
 
 .home-text {
+  color: var(--dl-color-logo-title);
   font-size: 4rem;
   font-family: 'Hammersmith One';
   animation-name: fadeIn;
@@ -362,6 +363,7 @@ html {
 }
 
 .home-text001 {
+  color: var(--dl-color-gray-500);
   height: 101px;
   margin-top: var(--dl-space-space-unit);
   font-weight: 400;
