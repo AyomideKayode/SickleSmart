@@ -73,7 +73,7 @@ body {
   width: auto;
   font-family: 'Lora';
   display: grid;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1815,6 +1815,7 @@ html {
   .home-container13 {
     width: 400px;
     height: var(--dl-space-space-fourunits);
+    margin-left: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
