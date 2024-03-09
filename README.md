@@ -5,7 +5,8 @@ My Portfolio Project to complete the Foundations Phase of ALX.
 This repository contains a Flask-based web application called SickleSmart, which provides functionality for user authentication, user health status tracking, and associated views. Below is an overview of the key components, Architecture, Features, Technologies Used and API endpoints available in the application.😁
 
 ![SickleSmart](./sicklesmart_web/static/images/web_logo1.png)
-![Visit Web App](https://sicklesmart.onrender.com/)
+
+[Visit Web App](https://sicklesmart.onrender.com/)
 
 ## Table of Contents
 
@@ -21,7 +22,7 @@ This repository contains a Flask-based web application called SickleSmart, which
   - [How To Run](#how-to-run)
   - [Dependencies](#dependencies)
     - [Environment](#environment)
-  - [Author](#author)
+  - [Author](#author-black_nib)
 
 ## Overview
 
