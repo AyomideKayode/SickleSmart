@@ -8,6 +8,10 @@ This repository contains a Flask-based web application called SickleSmart, which
 
 [Visit Web App](https://sicklesmart.onrender.com/)
 
+[Visit Wix Landing Page](https://ayomidekay7.wixsite.com/sicklesmart)
+
+[My Trello Board](https://trello.com/b/zECd1A3K/sicklesmart-portfolio-project)
+
 ## Table of Contents
 
 - [SickleSmart🩺](#sicklesmart-web-app)
