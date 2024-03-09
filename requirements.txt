@@ -17,7 +17,6 @@ constantly==15.1.0
 cryptography==2.8
 dbus-python==1.2.16
 distro==1.4.0
-distro-info==0.23+ubuntu1.1
 entrypoints==0.3
 Fabric3==1.14.post1
 flasgger==0.9.7.1
