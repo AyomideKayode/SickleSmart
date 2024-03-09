@@ -5,6 +5,23 @@ My Portfolio Project to complete the Foundations Phase of ALX.
 This repository contains a Flask-based web application called SickleSmart, which provides functionality for user authentication, user health status tracking, and associated views. Below is an overview of the key components, Architecture, Features, Technologies Used and API endpoints available in the application.😁
 
 ![SickleSmart](./sicklesmart_web/static/images/web_logo1.png)
+![Visit Web App](https://sicklesmart.onrender.com/)
+
+## Table of Contents
+
+- [SickleSmart🩺](#sicklesmart-web-app)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Architecture](#architecture)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Components](#components)
+  - [API Endpoints](#api-endpoints)
+  - [Data Model](#data-model)
+  - [How To Run](#how-to-run)
+  - [Dependencies](#dependencies)
+    - [Environment](#environment)
+  - [Author](#author)
 
 ## Overview
 
@@ -135,8 +152,12 @@ http://localhost:5000
 
 ---
 
-## Author
+## Author :black_nib:
 
-- _Website_ - [Ayomide Kayode](https://github.com/AyomideKayode)
+- **Ayomide Kayode** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  &nbsp;&nbsp;[<img height="" src="https://img.shields.io/static/v1?label=&message=GitHub&color=181717&logo=GitHub&logoColor=f2f2f2&labelColor=2F333A" alt="Github">](https://github.com/AyomideKayode)
+
+- _Website_ - [SickleSmart](https://sicklesmart.onrender.com/)
 - _ALX Software Engineering Program_ - [ALX_AFRICA](https://www.alxafrica.com/programmes/)
 - _Twitter_ - [@kazzy_wiz](https://www.twitter.com/kazzy_wiz)
