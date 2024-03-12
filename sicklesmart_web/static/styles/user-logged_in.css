@@ -65,6 +65,20 @@ section {
   padding-bottom: var(--dl-space-space-halfunit);
 }
 
+.welcome_banner {
+  text-align: left;
+}
+
+.welcome_banner h3 {
+  margin-top: var(--dl-space-space-unit);
+}
+
+.banner1,
+.banner2 {
+  display: grid;
+  gap: 20px;
+}
+
 .more_info {
   width: auto;
   height: auto;
