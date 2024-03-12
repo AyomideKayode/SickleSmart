@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""Module for database?
+"""
+Module for defining database models.
 """
 
 from . import db
@@ -9,6 +10,8 @@ from sqlalchemy.sql import func
 
 
 class HealthStatus(db.Model):
+    """Model representing the health status of users.
+    """
     healthStatusID = db.Column(db.Integer, primary_key=True)
     updated_date = db.Column(db.DateTime(timezone=True), default=func.now())
     symptoms = db.Column(db.String(5000))
@@ -18,6 +21,8 @@ class HealthStatus(db.Model):
 
 
 class User(db.Model, UserMixin):
+    """Model representing user information.
+    """
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))

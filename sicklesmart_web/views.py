@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-"""Views module for user's navigation that will be a blueprint for
-my application. Meaning it has the URLs(roots) defined here.
+"""
+Views module containing routes for user navigation,
+serving as a blueprint for the application with defined URLs (roots).
 """
 
 from flask import Blueprint, render_template, request, flash, jsonify
@@ -16,14 +17,20 @@ views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
+    """Render the index page.
+    Returns:
+        str: HTML content of the index page.
+    """
     return render_template('index.html', user=current_user)
 
 
 @views.route('/user-logged_in', methods=['GET', 'POST'])
 @login_required
-# to be added to the page route that should be dsiplayed when
-# users have successfully registered or logged in.
 def user_logged_in():
+    """Handle user logins and health status submissions.
+    Returns:
+        str: HTML content of the user-logged_in page.
+    """
     if request.method == 'POST':
         healthStatus = request.form.get('healthStatus')
 
@@ -42,10 +49,11 @@ def user_logged_in():
 
 @views.route('/delete-entry', methods=['POST'])
 def delete_entry():
+    """Handle deletion of a health status entry.
+    Returns:
+        dict: Empty JSON response.
+    """
     print('Delete entry route hit!')
-    # healthstatus = json.loads(request.data)
-    # healthstatusId = healthstatus['healthStatusId']
-    # Use get to handle potential None
     healthstatusId = request.json.get('healthStatusId')
     if healthstatusId is not None:
         healthstatus = HealthStatus.query.get(healthstatusId)
