@@ -60,7 +60,39 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Error deleting entry:', error);
       });
   }
-
   // Ensure deleteEntry is available in the global scope
   window.deleteEntry = deleteEntry;
+
+  const resourcesList = document.getElementById('resources-list');
+
+  // Function to fetch educational resources from the Flask route
+  function fetchResources() {
+    fetch('/educational-resources')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch educational resources');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        // Clear the existing resources list
+        resourcesList.innerHTML = '';
+
+        // Iterate through the fetched resources and add them to the list
+        data.forEach((resource) => {
+          const listItem = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = resource.link;
+          link.textContent = resource.title;
+          listItem.appendChild(link);
+          resourcesList.appendChild(listItem);
+        });
+      })
+      .catch((error) => {
+        console.error('Error fetching educational resources:', error);
+      });
+  }
+
+  // Call fetchResources function when the page loads
+  fetchResources();
 });

@@ -4,7 +4,7 @@
 To be imported as a package to the other python files for running.
 """
 
-from flask import Flask
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
@@ -21,9 +21,19 @@ def create_app():
 
     from .views import views
     from .auth import auth
+    from .web_scraper import fetch_educational_resources
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
+
+    # Define route for educational resources
+    @app.route('/educational-resources')
+    def educational_resources():
+        resources = fetch_educational_resources()
+        if resources is None:
+            return jsonify({'error':
+                            'Failed to fetch educational resources'}), 500
+        return jsonify(resources)
 
     from .models import User, HealthStatus
 

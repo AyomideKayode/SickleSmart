@@ -17,6 +17,13 @@ class HealthStatus(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
 
+class EducationalResource(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(255))
+    link = db.Column(db.String(255))
+    description = db.Column(db.Text)
+
+
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
