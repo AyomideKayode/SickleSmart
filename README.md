@@ -50,7 +50,7 @@ SickleSmart follows a traditional three-tier architecture:
 
 - **Health Tracking:** In this current MVP version, Users can track their health status and update symptoms. Working on how they can delete health statuses or symptoms they have previously updated which is currently being implemented and eventually implement how Users can receive reminders for hydration and medication.
 
-- **Educational Resources:** Access to educational resources on managing sickle cell anemia. \*_(Needs a bit more materials to be fully done with)_
+- **Educational Resources:** Access to educational resources on managing sickle cell anemia. \*_Done with the web scraping technique. Had to improvise because I initially thought of creating a separate database for the Educational Resources but scraping it off the web isn't bad at all🧐😅_
 
 - **Personalized Recommendations:** Users receive personalized recommendations for diet and lifestyle modifications. _(Not implemented yet.)_
 
