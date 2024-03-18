@@ -2,7 +2,7 @@
 
 My Portfolio Project to complete the Foundations Phase of ALX.
 
-This repository contains a Flask-based web application called SickleSmart, which provides functionality for user authentication, user health status tracking, and associated views. Below is an overview of the key components, Architecture, Features, Technologies Used and API endpoints available in the application.😁
+This repository contains a Flask-based web application called SickleSmart, which provides functionality to people living with Sickle Cell Anemia for user authentication, user health status tracking, and associated views. Below is an overview of the key components, Architecture, Features, Technologies Used and API endpoints available in the application.😁
 
 ![SickleSmart](./sicklesmart_web/static/images/web_logo1.png)
 
@@ -102,40 +102,40 @@ To run the SickleSmart web application locally, follow these steps:
 
 1. Clone this repository to your local machine.
 
-```bash
-git clone https://github.com/AyomideKayode/SickleSmart.git
-cd SickleSmart
-```
+  ```bash
+  git clone https://github.com/AyomideKayode/SickleSmart.git
+  cd SickleSmart
+  ```
 
 2. Install the required dependencies by running:
 
-```bash
-pip install -r requirements.txt
-```
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 3. Set up the Flask application environment by executing
 
-```bash
-export FLASK_APP=sicklesmart_web
-```
+  ```bash
+  export FLASK_APP=sicklesmart_web
+  ```
 
 4. Initialize the database by running:
 
-```bash
-flask init-db
-```
+  ```bash
+  flask init-db
+  ```
 
 5. Start the Flask development server with:
 
-```bash
-flask run
-```
+  ```bash
+  flask run
+  ```
 
 6. Access the application in your web browser at
 
-```bash
-http://localhost:5000
-```
+  ```bash
+  http://localhost:5000
+  ```
 
 ## Dependencies
 
